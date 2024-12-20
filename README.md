@@ -1,2 +1,3 @@
-# neovim-config
-Configuration of Neovim for all devices in which it is used.
+# Neovim Config Documentation
+
+> TBD, need to add more to it first
