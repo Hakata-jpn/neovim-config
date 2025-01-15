@@ -9,7 +9,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = { "lua_ls", "astro", "cssmodules_ls", "ts_ls", "docker_compose_language_service", "yamlls"}
+        ensure_installed = { "lua_ls", "astro", "cssmodules_ls", "ts_ls", "docker_compose_language_service", "yamlls", "marksman"}
       })
     end
   },
@@ -23,6 +23,7 @@ return {
       lspconfig.ts_ls.setup({})
       lspconfig.docker_compose_language_service.setup({})
       lspconfig.yamlls.setup({})
+      lspconfig.marksman.setup({})
 
       vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
       vim.keymap.set('n', 'gD', vim.lsp.buf.definition, {})
